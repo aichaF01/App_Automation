@@ -1,0 +1,209 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="680,2959" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:uas="clr-namespace:UiPath.Activities.System;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.IMAP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="608,2894" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:PasswordCredentials" Name="GmailCredentials" />
+      <Variable x:TypeArguments="scg:List(snm:MailMessage)" Name="EmailsList" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="10" Credential="[GmailCredentials]" CredentialName="UiPath: Gmail" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password from credential manager" sap:VirtualizedContainerService.HintSize="546,215" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_1" />
+    <ui:GetIMAPMailMessages ClientName="{x:Null}" ClientVersion="{x:Null}" FilterExpression="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages from Gmail" Email="[GmailCredentials.Username]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="546,65" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" IgnoreCRL="False" MailFolder="Inbox" MarkAsRead="False" Messages="[EmailsList]" OnlyUnreadMessages="True" OrderByDate="NewestFirst" Password="[GmailCredentials.Password]" Port="993" SecureConnection="Auto" Server="imap.gmail.com" Top="30" />
+    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each email in the collection" sap:VirtualizedContainerService.HintSize="546,2526" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[EmailsList]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="snm:MailMessage">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="RetrievedEmail" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="512,2339" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: 127.0.0.1:8000" sap:VirtualizedContainerService.HintSize="450,2254" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="a047fbdd-8b54-40cc-8dbb-e8e8e806819b" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="416,2014" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Titre de ticket'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="a047fbdd-8b54-40cc-8dbb-e8e8e806819b" Text="[RetrievedEmail.Subject]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://127.0.0.1:8000/" CvElementArea="310, 294, 692, 40" CvType="InputBox" DesignTimeRectangle="313, 296, 686, 37" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="583b5636-c065-4821-b80b-9433b5f7ceb1" InformativeScreenshot="943aafd7ecd12419a9f9cc175f73bc7d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='127.0.0.1:8000' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Description de ticket'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="a047fbdd-8b54-40cc-8dbb-e8e8e806819b" Text="[RetrievedEmail.Body]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://127.0.0.1:8000/" CvElementArea="310, 378, 691, 63" CvType="InputBox" DesignTimeRectangle="313, 380, 686, 60" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='form-control' aaname='' /&gt;" Guid="92e1a432-87cb-47cf-94f9-d13655e1631b" InformativeScreenshot="de613ff08a43a699c97ede8361d7f5d9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='127.0.0.1:8000' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Date de'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="a047fbdd-8b54-40cc-8dbb-e8e8e806819b" Text="[RetrievedEmail.DateAsDateTime.ToString(&quot;dd/MM/yyyy&quot;)]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://127.0.0.1:8000/" CvTextArea="325, 497, 102, 17" CvTextArgument="jj/mm/aaaa --I--" CvType="Text" DesignTimeRectangle="313, 487, 686, 37" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='datetime-local' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='datetime-local' class='form-control' aaname='' /&gt;" Guid="009f492e-0a4e-4608-a9c1-a3097b0a2891" InformativeScreenshot="32d3cf079c357c8905c600c7510c35c1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='127.0.0.1:8000' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'msedge.exe 127.0.0.1:80…'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a047fbdd-8b54-40cc-8dbb-e8e8e806819b" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://127.0.0.1:8000/" DesignTimeRectangle="397, 505, 32, 16" DesignTimeScaleFactor="1" Guid="666eb9a0-4d5c-4628-b99e-829626b9d4d9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACKSURBVEhLY/jx68//gcSjDhh1wFB1wIv/C6I0/yumr/n/Cqs88ZjsELi7feb/mUfeYZUjBcMd8PHGgf/rNmyG4l3/TzzDL46Bn539vwWubvP/3Te+4heHYrgDTiyu+F9YgsCT90F8h0scHT/e3o2irmLVbbziMDxUEyEN0gBpeBDkAmrhke6AP/8BB6CpuuHaX5MAAAAASUVORK5CYII=" InformativeScreenshot="a4eaac3a3c8f2dbe5ce0ecf0385cc1c6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='127.0.0.1:8000' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'msedge.exe 127.0.0.1:80…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_16" InteractionMode="HardwareEvents" ScopeIdentifier="a047fbdd-8b54-40cc-8dbb-e8e8e806819b" Text="[RetrievedEmail.DateAsDateTime.ToString(&quot;HH:mm&quot;)]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://127.0.0.1:8000/" DesignTimeRectangle="395, 462, 16, 16" DesignTimeScaleFactor="1" Guid="8fd67cf4-6ea5-4cc8-bd0d-5f1bb461a89e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABESURBVDhPY/jx689/SvCoAQNvwAsauODjjQP/123YDMW7/p94hl8cw4ATiyv+F5Yg8OR97/CKD3QgDspYIBVTaMCf/wB/ENm6xKhXnwAAAABJRU5ErkJggg==" InformativeScreenshot="7d8353122b05d927968bfa73597b2a86.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='127.0.0.1:8000' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email de créateur'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="a047fbdd-8b54-40cc-8dbb-e8e8e806819b" Text="[RetrievedEmail.From.Address]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://127.0.0.1:8000/" CvElementArea="310, 570, 691, 39" CvType="InputBox" DesignTimeRectangle="313, 572, 686, 37" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='form-control' aaname='' /&gt;" Guid="3662011e-9802-4a59-b35c-6fd3935ae016" InformativeScreenshot="242dd6f13e113e0d65793f6a09b452c9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='127.0.0.1:8000' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type de ticket'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,258" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="a047fbdd-8b54-40cc-8dbb-e8e8e806819b" Text="[RetrievedEmail.Subject.Substring(0, Math.Min(8, RetrievedEmail.Subject.Length))]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="http://127.0.0.1:8000/" CvElementArea="310, 654, 691, 40" CvType="InputBox" DesignTimeRectangle="313, 656, 686, 37" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='form-select' aaname='' /&gt;" Guid="797b699a-5c4f-401c-ad70-0234c1343ef6" InformativeScreenshot="fdec4baa7483e97dba57a0bac3f974d7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='127.0.0.1:8000' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ajouter le ticket'" sap:VirtualizedContainerService.HintSize="354,182" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a047fbdd-8b54-40cc-8dbb-e8e8e806819b" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://127.0.0.1:8000/" CvElementArea="310, 672, 132, 40" CvTextArea="324, 684, 106, 17" CvTextArgument="Ajouter le ticket" CvType="Button" DesignTimeRectangle="313, 674, 128, 37" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary' aaname='Ajouter le ticket' check:innerText='Ajouter le ticket' /&gt;" Guid="67558981-a02b-42c2-bd92-8e64d4fc9ee9" InformativeScreenshot="326bbb60ef47a3d31fed36bb0213c31f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='127.0.0.1:8000' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABSuSURBVGhDvZkHVJRn9sbJqnSGjqIigkidYehDGdoMQx16kSIiAkqwESsiiooUG1iiscbe1xLsGmXoRXoHQY2aGJP8/2w22Wx23cOz9xsGExOz7ibZvec8Z87Rc+Z7fvd93vt+7yD3e5ROVFqm8fYLEqsrPUPsu4Mv2eWPwC5/SBogPQC7og+cyh5wqrpgeaN6yPzclYGpRVsvqXC5fNlX/O9LLyo90+pkwwC37PmwjeQ5rCXPwJE8Aaf8scz8IKzIvFVFPwH0gF3ZTQAdpHZwa1phU9sE27oG2NdUvrQ68WGLmg37fwOjF/VuJvfK4yF7yf/DTvIlbCUvwABwCcBaCvDkJwB9JAagizQCwKlqGwGobYRDQy0c71fBpfkenCv+ODRpZmim7FG/b6lyXPg2FwaeO0r+DAfJEOwl/ycFeGWejFuXf0Ji4jNIIvNSgN4RVXb+CKCVVqFZCmBXXwfnJgnpHvitt+DVUQo3yaHnGnZmv9+KGC3ffdCx7M/DjHlHydcE8CcCGFkBm/LPSAzAiHnOaO7LKTrl1P1yBqBLqhGANlILrKubaRUaCKCGVqBCCuDRdlUK4Nt9Bv49x4c5+ckHZRZ+fXEO1LbwJH+Bk+QbMs90nzE/0n27cooPAXBlABzq/A8AjPkeMt4tNW9Z0Umr0EEQDEAzATTJAOrAa7wHl6aP4d56HYLOi/DrOQPxgw9JhyAqyxuQWfnPy+Zk1wBP8h1+AGC6P0QigPIvSJ8TwKcE8JQAHkoBRqJDXSfzluWM8VF1ktqlYtMKMBA2tfW0B6rgdL9cCsBvYQAuQEQrENR/GCED+xHxaCfCewq/UZ6kYSiz9e+VLZl3kfyVzI8CMPH5k9S8vdT8i1cATHSspd1nOj+a+1HjHT/S6wDW1fdhV0cRahgFuCEDOI3AvlGAXZjxZCtiHmz4Tmbt7WV9oKGFMe/8CuDbNwB8DlsybyPdvKPZ7xuJDk2dkY4zptteGf9BIzGyra2DQ30lnKQAtylCtAfaLyCg9wjE/QcQOrAH0Y+3IfZJERI/XYeIuvS3x2na8r0HXSV/wwgAY57RNwTwNQEw8fnqFYCdNP+PYV1B8akYObCYmT+yaUfNj+qnAE3gVtfDvo4BuEsAt2gFrsKn8zT8uo/KAHYj6lEx4p4UEkAukl+sguho8CWZ1Z+XGseV71L2t2FXyfdSABcy70zmedR9J+q+FKCcAWDiw0yfpz8CoBWQznzarFKNGP0lSfdATR2tQo0UwLXpmrT7IwBHpOYjH20l83mkfCR+tgYpL5Yh7YuFwxN4E948Yh0vPH3OdP91gG9lAENglz6FybFOGB1shtEh0odN9NmA6WdbYXGz90cAHf8SwIomEZN/m5oaWgEaoY03qful8Gz7IwTtZxDQcxDB/e8jfLCYIlREAOuR9NlKxjze/SoNs9pjnsgs/1D6UYsy3SR/J/OjAN9JZXX+GSYWlkFj0XGw5pMWn4HGknPQXH5xREvPQ3PJaWguOgad947CYNcdTL/c/Ebjo2JXMpu4kQBqCUACXsNt6Qq4N1+ET8cxWoHDEPd9gMjBTYj9ZANmPl2FpE+XYu4X86UA736VAut0i9dPbN6VL4fcJC/pFByB4F7+CprLLkJ1/imoZV4Ea1kp1Fdcg8aqW9BYfRuaa+5Aa+3H0JbqDukWdHJuQHvVR9BechJ6q05i+rWWn5m3qmylKdRMAPdhW1MJx7q7cG64TuYvw6v1HEQdhxHQvRfBfTsQPrAZ0Q/zEP9ktRQg9fMMzH2RivQvkjG7O/K5zLqc3ETqPl9m3vnuXzG5uAkq889B5b2PoLr0GtRW3gIr+y7U15RDY10VNDfUQHNjLbRI2gV10Cmgz/wa6GyshG5eGXTXfwzdnKvQIZBJxddhIXk9Tkz3OVUN0gg51t2RAng0nYd36ykpgF/nAQLYTitQgJiHazDzk2WY9TQTcz7LwLwXKUh/MQsZXyZAn6czshfsT/YN8CX/gMvdv0FrTRmUF5dCZel1qK64DdVsCdTWVEN9XR3U8xqhUdAMzaJWaG1qh9bmdmhvaYcOSXdrK302Q3fzfegW1UIvvxJ6eXehm/0RJmy4+ApCmv+qethUV8Ou5h4B3CKAq3BvOgPvlqMQte2Df+ceBHUXI7x/I2IGsxH/eCmSni3CnGepSP00GemfxyPji1gEHnUbmUhuZS+HGfPa1F2lJTegtOw2lLPKoJpTDdXcBqhtaAIrvx3qhR1Q39wFzS090NrWC63iPmiXMOqFDkl3ezd0S7qgW9wGva3N0NtUB72CCuiuvYEJ+aVSCHZlEwHUgVtVRRGSwKH2NgFcgkfzKQhaDsC3bTcCu0oQ3F2IsN5cxD5cgYRHizHryYJXAHM/S8C85zOQ3Bn4nOKzONOduq9LnVVcegdKy+9CeVUllNfUQWVdE1Tz2qFW0AlWUQ+Z74P6lj5obOuHZvEDaJWQtg9Ae8cAdHY8gO7OAVI/qQ96O7qhV9KG8VsbMb6oGnrrbmHyzjt0sakl85Wwrb4H++pb4NVdBq+eABqPEsB++LZuh3/bNgR35SO8NwfRD5YjbnAhEh+lYfaTNKQ8m0UAcVKAeZ+FDcvZ72tosTz9BRSWlUFxRTkUs6qhtKYByutaoJLXAdX8bqgV9kJtUx9Ym/sJ4AHUtz6ARvEANEsGCYARAzEInZ2D0N01SN1v/VYtvuCQsiB5ibJ30jJWXN4xnfV3/qybexOmF2tgU1UOu+qbBHAdznXn4VJ/TgawlwBK4N+6CSFdufQOtAJRfSsQO7AI8QNzkfgwGUmPE5H6LJbMRzEAkHO98ZdhtdwmKKyogkJWDRRz7kMptxXKGzqgsrEbKgW9UC3sI4AHUNv8ACwpwADUtw28gtBkIAhAu7gfk+cf/1yayzcUKzb3xISCG7CpvAW7qqtwqL4Ep5qzcKs/Ao/7+yBo3A5hUzECWjcgpHMtwruXIbp3IWL75yJhIIUAkgggAcmPYwgiEmnPQiDHOfMl5FfWkvl6KK5uhOLaViit74BSXjeU83ugkt8LlcJ+qBb1/0sI9ZX3wPLIuCfz+ovFmpF72qK0DPZVpXCsPgfnmhPg1x+G5/09BLANouYi+LdsQGBrDkI7liKi+z1E98xDXP9szByIxayHMZj9KBJzHoch9SkBGO5/BvmsBshnN0IhpxUKuR1QXN9NAD1Qyu+DcsGIRiFUNxHITyBYCz6Csnf2tzKPb63px64N21f+EbzqI6TDBLAPHg274XV/B3ybNtAKrEVQ63KEdCxDZHcGaR5i+xiAOCQOxhJAFAGEIvUTMeS0yci47GbIr26B/Np2AuiGAgEo5vVCaSOJgZCBvAlCbfk9qIjWQcEm7pTM31uLXXL0oWPlMThVHYUzAbjWEkB9CQQNeRA2rIN/8woEtWQipG0+wtrnIaJjDgEkIqE/FokDUUgajMCcR2KkPA6EnHpRHwG0YFxOOwF0Qj63CwrreqCwofcHiI2/ALG6nsyvhUpgEcaZCLNk/t5a0xatPOlYSd2vOgiX6j1wq94Gz9oCCOpyIaxfDVHDCgQ0LYa4JQNhbckIb5+N6K4ExPbEIKEvAon9wUgaCEJ8i3BIbmx2G8aS+XE5HRi3tosAuiHPAKzvgWZ+Fzw2SxCdvRvhczIREZuAqIRZmPneWiQVHoVL2hbohG2GanAJA7Bc5u+tpcox4TtVfADnih1wqdolBXCvzoN3bQ4BZBHAMgQ0LoS4KQ2hLUkEkISYrhmI7QpHfG/4CMCDIHjvsb0kN2Z1JwF0YOyaTinAuNwe6GxoR8Cak4iZmQpXNy+4uHrAXSCCODAcrq4iGE62gL6+OfQnWoHnFgyf1E3Qshavk/l7axmtiD/IK98+AlCxBW5VRVIAr+osCOtWwq9+PgLvzyOAFAKYhfDWWES2x2JGZyjiukOR0BOEmb0BwyoTFQ0JoANSiDVdpG7Yb65FWPJsWJobg2tjBC7XHCYGbFhZusNsqjMcp3vBmuMKtp0rXBw8YW5qBwtrW8xInPPS1s4uVObxX5btlaIhnqSYALYRwCbwK9fDoyoHXlXLIaxdClHdAgQ0zEFwUxKCG+MR1hKHiNZwRLaGIqZdjLhOf7rYOEqkX/bOqtaXY3KYVehCQMF1uHkKYWhhBVs7B9g5OMDCzBEWJi6wsw3ENCNX8Lj+cJnhhaAIHjxCXBA5g493Z9NnFBvBYeJhgdA/5x0q6Ze/oSaniQudynbQHYPMl2+AW/la8Cty4VG5Cp6VSyCoyYRvXTr865MRdD8RIQQQ2hiNiJZQRLWFSAGiGv1+uB+/s6R26A+ru+C0sQyezmJoWViCw3XANAMbGE7iYuoka5ia82Bj7wcTYz6ETmEQJAsxO5GPGTM8sCCFj4x4AdLCAjDV3Ak2DkIEBAQly77+tZLX0zR0uLtl2OleEXhl+XTfyCWA1eCXZ5H5pVIAYXU6fGtT4FuThIC6eIgbogggEmGNoYhoDkZ4nd93yvoUnVeVcETiQG+SfmGzYTLFEbZOvjDkh2A6Lximpm5k2hWWXBGsqPNscwEc2CJYO7vBydkVdo6ucHByA5vrjulGnpg83R0GhhY4c7L07258D5HsCa+KAXC8s+Gl0718OJeth0tZDr3CryKA5WR+Mbwr0yGsZMzPhl9NAgJqZyD4fhRC7ocjvCkUgbdEz5VeM8+UY2JmUv5x6E2yx1QTTxiZBcLYVAgjyroxmTem3HMdAmHBCYCtlYg+3WFs7gx9I2eMN+LBwMwFxhZ8GJq5YQJFzdraGaUXK1FSsvey7AmvlZYXZ4bTnbUvXcpWw7UsC25lywlgGTwrMghgLgEkw6cqGX7V8QQQDXF9OEIaQoadtjq8+TKvo6Mz3jcoelh3kgP4vqHge/tRF20wkaIzxYAiZGALS1tvmLP9YDjNBVwnEYTxvkgI8YWPRwhNJ0+aREKYWwqhPcUezjwhbt1shaSqa1hPT09f9piflUGqV6HdibQB55sLv3OXLIRn+bvwrkiDoGIORFUzSbHDXqUhzznZNgeVJij98o9akZHh6Ww7T0wx9UBMchK8RIGYMNEWk6fYwmCKHQynOMDB3Qdm1n4wpi5z2UJYOHuDzxfA2z0CJmR8/HQ+plh6Ql2fA1+fcJTR5f7mvXbExs1Mlz3mv1dbt22RTDFxwHTKdkBwAsycvDCF7QwDAzsCoFhN44Ht7E8xEVHWfWDv5UOj1RM6Rnzok/GJZgIYEIQRxwdq480RG5OK8toB3JJ0Yv+RsyOj7r9ZGwu3/EmXJs5kY8r0ZC592mPiVHvo079NnGxDk8UZFnYUHwsBplt4wsEziEB9IXD3hZWDH2zcRLDhBcLMJhDKuibISM9Ced1D3K3uQ13rJ8MKVuGFskf9d2pe+qLvtSbZwsjKC/qGXBLBGDpiigkfk2gTG1q5woTtDUNzT9rczNTxg4vIG8EiIbyEPhBHBEIoCJVGTFVvGrKzCnDlyj2cPnEFd+7WgxW5H2rB24fGaJv8pt/7x2oa8RWmuv/8jx8B4pjvNSZyqZv+8A0Lg72HAFw7D5jRnhhPETKz9oApR4RJpnyYmbmDLwhCYIgPAvyDEJPoh+BUH8RGhcDSjiKkOw35uXkoPXsMx/fuwsnjJ6QAUkXsg5q4eEjJdubBd5S0/u1fmhXNgwrVvLMHNIO2QTNoK5TMAl5fUX9x9GNNA3tY2XlBEBJOEfED11YAw+lOFCkbWNpTdDh+mExnAtfSG6ZsL1jZe8LWUQS+nzd8Q4TwdAnGVPo/vclm+GDLFkiunsOFI/uw79Cp1wBYEXuhHv6BVKzArUOqXlktKvzFEnlj70x5Y69MBZKyY8olVZeFEpZ/wZB6UPGwhrgYjBgAjcAtw2M1p76+kuKwqMss2nzmHCfY8b1g4OpOpykPHHt3mu18GFt7YirbF9ZcP4h8w+DjL8R0ayEmkWF9UwHGm4qgRXFz8o6Gu7s/ju95H5VXzuP8h/uQv+fcLwKoh+0h7Sa9D/VQRrugEbKTtAMawYy2k/ESqflRAGVO9M//YuPs4pKpztKA/FhFKMgrQWGMEsaOU4K8ogoUldSgrKwBZTUdsDQn0NkwlU5nI1izbeFIgFx7Piy4brCy8YCvfyxEwmBcPnwIpccO4dS+vYhf//sBqPGXtMgsv16TJk029xSGQo2lT6/HxtDRmwJtrYkkfWhq6kFXQw+a6npQU9OGkjIL4+RVID9OgTSWNA7jxo4DS40FRXlFiH3FuFp6DadOnsW1qzdhlnL0dwFg9oDM7ptrdurCm6YcIb3vCDDN3BVTjR3pDLDB+AnmGE/x0tYxgZ6uKY1VKxiYOFKE/ChucfAISIUgMBne/gmIjElH8aadOHv6BM6dOY1tx+6AFXXgNwO81TxTBlOmmq/efPL76IydiF2wC2FzNsM/Lg+CiGwII7PgFbQQ3uLFiE4twoJV+7Fw5U6kZawl0ynw9A6Cu1cQgiNTsGLlehw5tB8XLl7CtGTq/m8EUHVf9ubYvKlEfuLkrE3nkJp9Epn5F1F4QIIDF5px9k4fbtR/ilv1z/A+bcpQcQxlPQieNK28KXo+/nEQBiSA5xEGf/FMnDh+ChG5F8j8wV8NoC7ePqxoLv7PD8Dg4PB1YVEZiAmeg727z+J23SAqW57g46oelFV30QtaGxJmLkHEjIWIjMukS808+ATOorMhhjayD6Ji0pBWeB5qo+Z/BQDLN+/5GC3jX3/oWVlZhYaK/L4WWHGREj8bq5ZmY9HcDLw7Zx5W5xQjLjkHfqFp8PaNg6t7MJxcAsFzDcKseVmwLaiFQlopVMJ3S82OmCfjjN4CwArcNMScAzIbv620tHUMYmMTrkSER4PH8wSHzgjmNTkmbj48vaLAcw6AG5lnRmfqvGVI3XweOrmt+EN2F5jb3ZhV7VCYfxfKiafBos6yyLBUEYx5Mi4DVIs7AjVBziBzkMke/fuWpSXbIzQsOjctPfP64iW5vVtLDn+TMT/7m5mJ8/oSZ6VeZyJnYWHpwVyK5BIOS+ToevpOVttLBkIKQvfsMTndkF/RCIXldVDKLIfG4jv/GL+g9OsJ8durZI/5DSUn90+Z85/7xygb6gAAAABJRU5ErkJggg==" InformativeScreenshot="83af1aaa4094610c7d82b1a28626b219.jpg" Selector="&lt;html app='msedge.exe' title='127.0.0.1:8000' /&gt;" Title="127.0.0.1:8000" Url="http://127.0.0.1:8000/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
