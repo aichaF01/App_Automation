@@ -1,0 +1,1 @@
+J'ai développé un robot avec UiPath pour automatiser la récupération et la gestion des e-mails Gmail. Ce robot est intégré dans une application web que j'ai créée avec Laravel, MySQL, et Bootstrap afin de centraliser et simplifier la gestion des e-mails.
